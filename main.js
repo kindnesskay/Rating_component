@@ -26,5 +26,5 @@ submit.addEventListener("click", next);
 function next() {
 rate.classList.add('hide');
 thanks.classList.remove('hide');
-num.innerHTML=`you clicked ${ratings} out of 5`;
+num.innerHTML=`you selected ${ratings} out of 5`;
 }

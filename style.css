@@ -12,6 +12,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-width: 310px;
+  
 }
 
 .container {
@@ -28,27 +31,33 @@ body {
   align-items: center;
 }
 .banner img {
-  width: auto;
-  height: 40%;
+  width: 60%;
+  height: auto;
+  margin-top:5% ;
 }
 .para {
-  font-size: 14px;
+  font-size: clamp(10px, 3vw, 15px);
   font-weight: bold;
   color: gray;
-  word-spacing: 2px;
-  margin-top: 3%;
+  margin-top:5% ;
+  line-height: 150%;
+}
+#thanks .para{
+  text-align: center;
 }
 
 .area {
   position: relative;
   background-color: hsl(213, 19%, 18%);
-  padding: 6%;
-  width: 400px;
-  height: auto;
+  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 20px;
+  max-width: 450px;
+  max-height:450px;
+  height: auto;
+  aspect-ratio: 1/1;
 }
 
 h1 {
@@ -57,25 +66,24 @@ h1 {
 }
 
 .rating_display {
-  width: 50%;
+  width: fit-content;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   text-align: center;
-  padding: 3%;
-  margin-top: 3%;
+  padding: 5%;
+  margin-top: 5%;
   color: hsl(25, 97%, 53%);
 }
 
 .score {
   border-radius: 50%;
   font-size: 20px;
-  height: 7vw;
-  width: 7vw;
-  max-width: 50px;
-  max-height: 50px;
+  height: 35px;
+  width: 35px;
   text-align: center;
   color: grey;
   border: none;
+  margin-top:3% ;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .star {
@@ -84,16 +92,14 @@ h1 {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
-  height: 5vw;
-  width: 5vw;
-  max-width: 50px;
-  max-height: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   margin-bottom: 5%;
 }
-.star img{
+.star img {
   height: auto;
-  width: 60%;
+  width: 40%;
 }
 .scoreActive {
   background-color: orangered;
@@ -130,31 +136,4 @@ h1 {
 
 .hide {
   display: none;
-}
-@media screen and (max-width: 600px) {
-  .area {
-    width: 90%;
-    height: auto;
-  }
-  .para {
-    font-size: 4vw;
-    word-wrap: break-word;
-  }
-  h1 {
-    font-size: 5vw;
-  }
-  .submit{
-    font-size: 2vw;
-  }
-  .score{
-    font-size: 3vw;
-
-  }
-
-.rating_display{
-  font-size: 3vw;
-}
-.banner{
-  height: 49vw;
-}
 }
