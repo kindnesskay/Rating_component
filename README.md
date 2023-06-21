@@ -14,7 +14,5 @@ Users should be able to:
 - CSS 
 - javascript
 
-### Continued development
-- site responive 
 ## screenshot
 ![](./screenshot.png)
